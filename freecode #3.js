@@ -26,12 +26,12 @@ const contacts = [
 ];
 
 function lookUpProfile(name, prop) {
-  for (var i = 0; i < contacts.length; i++) {
+for (var i = 0; i < contacts.length; i++) {
     if (contacts[i].firstName === name) {
-      return contacts[i][prog] || "No such property"
+      return contacts[i][prop] || "No such property";
     }
   }
   return "No such contact"
 }
 
-lookUpProfile("Akira", "likes");
+lookUpProfile("Shirlock", "lastName");
